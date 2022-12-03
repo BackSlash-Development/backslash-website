@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    /* Temporarily removing highlighting*/
+    user-select: none;
+    -moz-user-select: none;
+}
+
+img {
+    animation: 3s parralaxHuge;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Change highlight colour in the future */
+::selection, ::-moz-selection {}
+
+#center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+h1 {
+    animation: 3s parralaxLong;
+
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+}
+
+p {
+    position: relative;
+    animation: 3s parralaxShort;
+
+    top: -20px;
+    font-size: 1.2rem;
+}
+
+@keyframes parralaxHuge {
+    0% {
+        opacity: 0;
+        transform: translateY(-12rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes parralaxLong {
+    0% {
+        opacity: 0.05;
+        transform: translateY(-10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes parralaxShort {
+    0% {
+        opacity: 0;
+        transform: translateY(-12rem);
+    }
+    30% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
