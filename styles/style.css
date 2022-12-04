@@ -6,6 +6,8 @@ body {
     /* Temporarily removing highlighting*/
     user-select: none;
     -moz-user-select: none;
+
+    margin: 0 auto;
 }
 
 img {
@@ -45,6 +47,68 @@ p {
 
     top: -20px;
     font-size: 1.2rem;
+}
+
+#purchaseIntended {
+    border-radius: 0.25rem;
+    padding: 0.45rem 0.7rem;
+    background: white;
+    border: 2px solid #1E82E9;
+
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #1E82E9;
+    font-weight: 500;
+}
+
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: red;
+
+    display: flex;
+}
+
+#leftColumn {
+    background: blue;
+    display: inline-block;
+    width: 33vw;
+    height: 100vh;
+
+    
+    margin: 0 auto;
+    padding: 0;
+}
+
+#midColumn {
+    background: rgb(0, 255, 81);
+    display: inline-block;
+    width: 33vw;
+    height: 100vh;
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+#rightColumn {
+    background: rgb(255, 0, 234);
+    display: inline-block;
+    width: 33vw;
+    height: 100vh;
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+#aUnderline {
+    text-decoration: underline;
+}
+
+bold {
+    font-weight: 900;
 }
 
 @keyframes parralaxHuge {
